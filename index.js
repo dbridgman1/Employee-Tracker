@@ -89,7 +89,7 @@ function ViewAll() {
 function ViewAllDp() {
   console.log("Selecting all departments...\n")
   connection.query(
-    `SELECT department.id AS "ID", department.name AS "Department"
+    `SELECT department.id AS "ID", department.name AS "Departments"
     FROM department`,
     function(err,res) {
       if(err) throw err;
